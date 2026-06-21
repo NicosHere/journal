@@ -1,0 +1,11 @@
+name = "minimal-journal"
+main = "src/worker.js"
+compatibility_date = "2026-06-21"
+
+[[durable_objects.bindings]]
+name = "JOURNALS"
+class_name = "JournalRoom"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["JournalRoom"]
